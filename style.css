@@ -1,12 +1,11 @@
-
-
 /* reset da página */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container-grid{
+
+.container-grid {
     /* width: 90%; */
     margin: 0 auto;
     max-width: 1200px;
@@ -14,31 +13,34 @@
 }
 
 
-header{
+header {
     display: flex;
-    height: 108px;
+    height: 90px;
     background-color: #ffffff;
-    box-shadow: 3px 0 10px rgba(0,0,0, 0.5);
-    
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
 
-
-
-    
 }
+
 /* header-flex é responsável pela organização dos componentes do header */
-.header-flex{
+.header-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* width: 1920px; */
     height: 108px;
-
 }
-.logo-header{
+
+.logo-header {
     display: flex;
     width: 331px;
     height: 64px;
     align-items: flex-start;
+}
+.img-logo{
+    display: flex;
+    width: 201px;
+    height: 64px;
+    justify-content: space-around;
 }
 
 /* remover a estilização que vem por padrão nos links da ul e li  */
@@ -49,8 +51,9 @@ header{
     justify-content: space-between;
 
 }
+
 /* /* realiza a estilização dos links dentro da nossa header  */
-.links-header .nav-links a{
+.links-header .nav-links a {
     /* realiza a remoção do sublinhado dos links  */
     text-decoration: none;
     color: black;
@@ -61,13 +64,14 @@ header{
 }
 
 /* efeito de quando passa o mouse sobre os links, o mesmo muda de cor para preto */
-.links-header .nav-links a:hover{
-    color: black;
+.links-header .nav-links a:hover {
+    color: rgb(224, 16, 16);
     /* tempo para realizar a mudança de cor  */
     transition: 0.2s;
 }
+
 /* realiza o espaçamentos dos links e deixa os mesmos na horizontal */
-.nav-links{
+.nav-links {
     width: 350px;
     display: flex;
     justify-content: space-evenly;
@@ -80,65 +84,83 @@ header{
 
 
 /* MAIN */
-.botoes{
+.botoes {
     display: flex;
     align-items: flex-end;
 }
+
 .central-dos-botoes{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
     
 }
-.button-edit{
+
+
+
+
+.button-edit {
     display: flex;
-    align-items:
+    background-color: red;
+    border-radius: 10px;
+    width: 90px;
+    justify-content: center;
 }
+
+
 
 
 
 .imagens-invista {
     display: flex;
-    
-    
-
-}
-.pessoas{
-    position: relative;
-    left: 500px;
-    bottom: 11px;
-    width: 679px ;
-    height: 350px ;
-    
-
+    justify-content: space-between;
+    align-items: center;
 }
 
-.retangulo{
+.pessoas {
+ position: absolute;
+ left: 64%;
+ z-index: 1;
+ height: 250px;
+ bottom: 37px;
+}
+
+.retangulo {
+ position: relative;
+ height: 450px;
+ width: 60%;
+ left: 43%;
+}
+
+.textos {
     display: flex;
-   width: 900px;
-   height: 383px;
-}
-.textos{
- 
- 
-    display: flex;
-    position:absolute;
+    flex-direction: column;
     right: 320px;
-    bottom: 11px;
-    width: 679px ;
-    height: 431px ;
-
- 
-    width: 933px;
+    width: 400px;
     height: 256px;
-    
+    justify-content: space-around;
 }
 
-.footer{
+.invista-futuro {
+    display: flex;
+    text-align: end;
+
+}
+
+.footer {
 
     display: flex;
     justify-content: center;
     height: 46px;
     background-color: #ffffff;
-    box-shadow: 3px 0 10px rgba(0,0,0, 0.5);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
     align-items: center;
 
 }
 
+.info-main{
+    width: 400px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
