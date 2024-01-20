@@ -1,166 +1,178 @@
 /* reset da página */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container-grid {
-    /* width: 90%; */
-    margin: 0 auto;
-    max-width: 1200px;
-    justify-content: space-between;
+  /* width: 90%; */
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
 }
 
-
 header {
-    display: flex;
-    height: 90px;
-    background-color: #ffffff;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
-
+  display: flex;
+  height: 90px;
+  background-color: #ffffff;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* header-flex é responsável pela organização dos componentes do header */
 .header-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* width: 1920px; */
-    height: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 108px;
 }
 
 .logo-header {
-    display: flex;
-    width: 331px;
-    height: 64px;
-    align-items: flex-start;
+  display: flex;
+  width: 331px;
+  height: 64px;
+  align-items: flex-start;
 }
-.img-logo{
-    display: flex;
-    width: 201px;
-    height: 64px;
-    justify-content: space-around;
+.img-logo {
+  display: flex;
+  width: 187px;
+  height: 42px;
+  justify-content: space-around;
 }
 
 /* remover a estilização que vem por padrão nos links da ul e li  */
 .links-header ul li {
-    /* remove as bolinhas laterais */
-    list-style-type: none;
-    text-decoration: none;
-    justify-content: space-between;
-
+  /* remove as bolinhas laterais */
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: space-between;
 }
 
 /* /* realiza a estilização dos links dentro da nossa header  */
 .links-header .nav-links a {
-    /* realiza a remoção do sublinhado dos links  */
-    text-decoration: none;
-    color: black;
-    font-family: font-paragrafo-bold;
-    font-size: 20px;
-    /* realiza o espaçamento interno dos links */
-    letter-spacing: 1px;
+  /* realiza a remoção do sublinhado dos links  */
+  text-decoration: none;
+  color: black;
+  font-family: font-paragrafo-bold;
+  font-size: 20px;
+  /* realiza o espaçamento interno dos links */
+  letter-spacing: 1px;
 }
 
 /* efeito de quando passa o mouse sobre os links, o mesmo muda de cor para preto */
 .links-header .nav-links a:hover {
-    color: rgb(224, 16, 16);
-    /* tempo para realizar a mudança de cor  */
-    transition: 0.2s;
+  color: rgb(224, 16, 16);
+  /* tempo para realizar a mudança de cor  */
+  transition: 0.2s;
 }
 
 /* realiza o espaçamentos dos links e deixa os mesmos na horizontal */
 .nav-links {
-    width: 350px;
-    display: flex;
-    justify-content: space-evenly;
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
 }
-
-
-
-
-
-
 
 /* MAIN */
+
+main {
+  height: 90vh;
+}
+
 .botoes {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  justify-content: center;
 }
 
-.central-dos-botoes{
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    
+.central-dos-botoes {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
 }
-
-
-
 
 .button-edit {
-    display: flex;
-    background-color: red;
-    border-radius: 10px;
-    width: 90px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
+  width: 90px;
+  
+  justify-content: center;
+  cursor: pointer;
+  border: none;
 }
 
+.button-edit:hover {
 
-
-
+  background-color: red;
+}
 
 .imagens-invista {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .pessoas {
- position: absolute;
- left: 64%;
- z-index: 1;
- height: 250px;
- bottom: 37px;
+  position: absolute;
+  left: 62%;
+  z-index: 1;
+  top: 41.8%;
+  height: 300px;
 }
 
 .retangulo {
- position: relative;
- height: 450px;
- width: 60%;
- left: 43%;
+  position: relative;
+  height: 400px;
+  width: 50%;
+  left: 50%;
+  margin-top: 5%;
+  border-radius: 30% 0px 0px 30%;
+  background-color: red;
 }
 
 .textos {
-    display: flex;
-    flex-direction: column;
-    right: 320px;
-    width: 400px;
-    height: 256px;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  right: 350px;
+  width: 430px;
+  height: 250px;
+  justify-content: space-around;
+  
 }
 
 .invista-futuro {
-    display: flex;
-    text-align: end;
-
+  display: flex;
+  text-align: center;
+  font-size: 65px;
+  
+}
+.faça-parte {
+  display: flex;
+  text-align: center;
+  font-size: 22px;
 }
 
 .footer {
-
-    display: flex;
-    justify-content: center;
-    height: 46px;
-    background-color: #ffffff;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
-    align-items: center;
-
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 0 09px rgba(0, 0, 0, 0.5);
+  align-items: center;
 }
 
-.info-main{
-    width: 400px;
-    position: absolute;
-    top: 35%;
-    left: 10%;
+.info-main {
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
 }
